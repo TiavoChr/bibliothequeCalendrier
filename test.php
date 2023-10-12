@@ -1,6 +1,6 @@
 <?php
     require_once 'calendrier.php';
-    $mois = 10;
+    $mois = 1;
     $annee = 2023;
     $oCalendrier = new Calendrier($mois, $annee);
     $sCalendrier =  $oCalendrier->generer_calendrier();
