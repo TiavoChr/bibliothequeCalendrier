@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $annee = $_POST['annee'];
 
     $oCalendrier = new Calendrier($mois, $annee);
+    // $oCalendrier->ajouterEvenement(15, 'mi-mois');
     $sCalendrier =  $oCalendrier->generer_calendrier();
 
     header('Content-Type: application/json');
